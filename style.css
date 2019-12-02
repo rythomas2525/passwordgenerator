@@ -1,0 +1,22 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    letter-spacing: 1.5px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#yourpassword {
+    font-size: 30px;
+    
+}
+
+button {
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}

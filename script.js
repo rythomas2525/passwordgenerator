@@ -31,19 +31,7 @@ generateEl.addEventListener("click", () => {
     resultEl.innerText = generatePassword(length, numbersCheck, upperCheck, lowerCheck, symbolCheck);
 });
 
-// copyEl.addEventListener("click", () => {
-//     var textarea = document.createElement("textarea");
-//     var password = resultEl.innerText;
 
-//     if (!password) {
-//         return;
-//     }
-
-//     textarea.value = password;
-//     document.body.appendChild(textarea);
-//     textarea.select();
-//     document.execCommand("copy");
-// })
 
 copyEl.addEventListener('click', () => {
     const textarea = document.createElement('textarea');
@@ -75,7 +63,7 @@ function generatePassword(length, number, upper, lower, symbols) {
     var typeArray = [{ number }, { upper }, { lower }, { symbols }].filter(item => Object.values(item)[0]);
 
 
-    if (howManyTypes === 0) {
+    if (howManyTypes === 0 || length < 8) {
         return " ";
     }
 

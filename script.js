@@ -21,7 +21,7 @@ const randomFunction = {
 
 
 generateEl.addEventListener("click", () => {
-    var length = +lengthEl.value;
+    var length = lengthEl.value;
     var numbersCheck = numbersEl.checked;
     var lowerCheck = lowercaseEl.checked;
     var upperCheck = uppercaseEl.checked;
@@ -37,7 +37,7 @@ copyEl.addEventListener('click', () => {
     const textarea = document.createElement('textarea');
     const password = resultEl.innerText;
 
-    if (!password) { return; }
+    if (password === "") { return; }
 
     textarea.value = password;
     document.body.appendChild(textarea);
